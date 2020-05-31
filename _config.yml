@@ -5,10 +5,10 @@
 # Site
 title: 热爱可抵岁月漫长
 subtitle: ''
-description: ''
+description: '张鸿鹏的博客'
 keywords:
 author: 张鸿鹏
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -101,3 +101,23 @@ deploy:
   type: git
   repo: https://github.com/ssjtbcf/ssjtbcf.github.io.git
   branch: master
+
+# 添加本地搜索
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
