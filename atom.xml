@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-28T13:28:30.779Z</updated>
+  <updated>2020-08-23T11:48:31.686Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>github-and-hexo</title>
+    <link href="http://yoursite.com/2020/08/23/github-and-hexo/"/>
+    <id>http://yoursite.com/2020/08/23/github-and-hexo/</id>
+    <published>2020-08-23T11:48:31.686Z</published>
+    <updated>2020-08-23T11:48:31.686Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/08/23/hello-world/"/>
+    <id>http://yoursite.com/2020/08/23/hello-world/</id>
+    <published>2020-08-23T11:48:31.686Z</published>
+    <updated>2020-08-23T11:48:31.686Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript深入之call、apply、bind的模拟实现</title>
     <link href="http://yoursite.com/2020/06/15/SimulateCallAndApplyAndBind/"/>
     <id>http://yoursite.com/2020/06/15/SimulateCallAndApplyAndBind/</id>
     <published>2020-06-14T16:00:00.000Z</published>
-    <updated>2020-06-28T13:28:30.779Z</updated>
+    <updated>2020-08-23T11:48:31.686Z</updated>
     
     <content type="html"><![CDATA[<ul><li>call<blockquote><p>call() 方法在使用一个指定的 this 值和若干个指定的参数值的前提下调用某个函数或方法。</p></blockquote></li></ul><p>注意几点</p><ol><li>call 改变了 this 的指向。this 参数可以传 null，当为 null 的时候，视为指向 window</li><li>函数执行了</li><li>call 函数还能给定参数执行函数，传入的参数不确定</li><li>函数可以有返回值</li></ol><p>代码如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"> Function.prototype.call2 &#x3D;  function (context &#x3D; window, ...args) &#123;</span><br><span class="line">    context &#x3D; context || window;</span><br><span class="line">    &#x2F;&#x2F; 从this中获取调用call2的函数</span><br><span class="line">    const fn &#x3D; this;</span><br><span class="line">    context.fn &#x3D; fn;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 获取传入的参数</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 可以有返回值  参数数组放到要执行的函数的参数里面去</span><br><span class="line">    const result &#x3D; context.fn(...args);</span><br><span class="line">    delete context.fn;</span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function bar (name, age) &#123;</span><br><span class="line">    console.log(this.a);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let obj &#x3D; &#123;</span><br><span class="line">    a: &#39;obj&#39;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bar.call2(obj, &#39;zhp&#39;, 18);</span><br></pre></td></tr></table></figure><ul><li>apply<blockquote><p>apply实现基本与call一致</p></blockquote></li></ul><p>代码如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Function.prototype.apply2 &#x3D;  function (context &#x3D; window, arr) &#123;</span><br><span class="line">    context &#x3D; context || window;</span><br><span class="line">    const fn &#x3D; this;</span><br><span class="line">    context.fn &#x3D; fn;</span><br><span class="line">    let result;</span><br><span class="line">    if (!arr) &#123;</span><br><span class="line">        result &#x3D; context.fn();</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        const args &#x3D; arr.map((item, index) &#x3D;&gt; &#96;arr[$&#123;index&#125;]&#96;);</span><br><span class="line">         result &#x3D; eval(&#39;context.fn(&#39; + args + &#39;)&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">    delete context.fn</span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function bar (name, age) &#123;</span><br><span class="line">    console.log(this.a, name,age);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let obj &#x3D; &#123;</span><br><span class="line">    a: &#39;obj&#39;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bar.apply2(obj, [&#39;zhp&#39;, 18])</span><br></pre></td></tr></table></figure><ul><li>bind<blockquote><p>bind() 方法会创建一个新函数。当这个新函数被调用时，bind() 的第一个参数将作为它运行时的 this，之后的一序列参数将会在传递的实参前传入作为它的参数。(来自于 MDN )</p></blockquote></li></ul><p>bind函数特点：</p><ol><li>返回一个函数</li><li>可以传入参数</li></ol><p>代码如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"> Function.prototype.bind2 &#x3D;  function (context &#x3D; window, ...args) &#123;</span><br><span class="line">    context &#x3D; context || window;</span><br><span class="line">    &#x2F;&#x2F; 调用bind的必须是函数</span><br><span class="line">    if (typeof this !&#x3D;&#x3D; &quot;function&quot;) &#123;</span><br><span class="line">      throw new Error(&quot;Function.prototype.bind - what is trying to be bound is not callable&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    const fn &#x3D; this;</span><br><span class="line">    &#x2F;&#x2F; 通过一个空函数来进行中转：</span><br><span class="line">    const fNOP &#x3D; function () &#123;&#125;;</span><br><span class="line">   const foundFn &#x3D;  function (...subArgs) &#123;</span><br><span class="line">       &#x2F;&#x2F; 当 bind 返回的函数作为构造函数的时候，bind 时指定的 this 值会失效，但传入的参数依然生效。</span><br><span class="line">       &#x2F;&#x2F; 当作为构造函数时，this 指向实例，fn 指向绑定函数</span><br><span class="line">       &#x2F;&#x2F; 当作为普通函数时，this 指向 window，fn 指向绑定函数</span><br><span class="line">       context &#x3D; this instanceof fn ? this: context;</span><br><span class="line">       return fn.call(context, ...args, ...subArgs);</span><br><span class="line">   &#125;</span><br><span class="line">   fNOP.prototype &#x3D; this.prototype</span><br><span class="line">   foundFn.prototype &#x3D; new fNOP();</span><br><span class="line"></span><br><span class="line">   return foundFn;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function bar (name,age) &#123;</span><br><span class="line">    console.log(this.a, name,age);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let obj &#x3D; &#123;</span><br><span class="line">    a: &#39;obj&#39;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const returnFn &#x3D; bar.bind2(obj, &#39;zhp&#39;);</span><br><span class="line">const res &#x3D; returnFn(18);</span><br><span class="line">&#x2F;&#x2F; const res &#x3D; new returnFn(18);</span><br><span class="line">console.log(res);</span><br></pre></td></tr></table></figure><p>参考连接：<br><a href="https://github.com/mqyqingfeng/Blog/issues/11" target="_blank" rel="noopener" title="JavaScript深入之call和apply的模拟实现">JavaScript深入之call和apply的模拟实现</a><br><a href="https://juejin.im/post/59093b1fa0bb9f006517b906" target="_blank" rel="noopener" title="JavaScript深入之bind的模拟实现">JavaScript深入之bind的模拟实现</a></p>]]></content>
     
@@ -49,26 +86,11 @@
   </entry>
   
   <entry>
-    <title>github-and-hexo</title>
-    <link href="http://yoursite.com/2020/05/31/github-and-hexo/"/>
-    <id>http://yoursite.com/2020/05/31/github-and-hexo/</id>
-    <published>2020-05-31T14:34:23.715Z</published>
-    <updated>2020-05-31T14:34:54.681Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>MarkDown语法</title>
     <link href="http://yoursite.com/2020/05/31/markdown/"/>
     <id>http://yoursite.com/2020/05/31/markdown/</id>
     <published>2020-05-30T16:00:00.000Z</published>
-    <updated>2020-05-31T14:28:54.883Z</updated>
+    <updated>2020-08-23T11:48:31.687Z</updated>
     
     <content type="html"><![CDATA[<p>Markdown 致力于使阅读和创作文档变得容易.Markdown 完全由标点符号组成, 这些标点经过仔细挑选以使他们看上去和表达的含义相同. 例如, 星号标记的单词就像 <em>强调</em>. 列表就像是列表. 如果你使用过 email 的话, 就连块引用都像引用的文本段落.</p><ol><li>特殊字符如<code>&lt;</code>,<code>&amp;</code>等会自动转义,这使得用 Markdown 来写 HTML 代码很容易</li><li>#~6#表示一级到六级标题</li><li>引用<code>&gt;</code></li><li><code>*、-、+</code>无序列表，数字加句号有序列表，可以转义“.”来避免触发有序列表</li><li>三个<code>*</code>或<code>-</code>及以上数量生成水平线</li><li>两种链接形式：内联及引用</li></ol><ul><li>内联链接示例  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This is [an example](http:&#x2F;&#x2F;example.com&#x2F; &quot;Title&quot;) inline link.</span><br></pre></td></tr></table></figure></li><li>引用链接示例，链接定义的名称可以包含字母,数字,空格,和标点符号,但它们不是大小写敏感的.   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">This is [an example][id] reference-style link.</span><br><span class="line">[id]: http:&#x2F;&#x2F;example.com&#x2F;  &quot;Optional Title Here&quot;</span><br></pre></td></tr></table></figure>  <em>注意: Markdown.pl 1.0.1 有一个已知的问题就是不能用单引号来包围链接标题.<br>  （”Optional Title Here”： 为可选的链接标题）</em></li></ul><ol start="7"><li><p><code>*</code>与<code>_</code>作为强调标记，等同<code>&lt;em&gt;</code>标签包裹；<code>**</code>与<code>__</code>等同于<code>&lt;strong&gt;</code>标签包裹</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">强调可以出现在单词中,例如</span><br><span class="line"></span><br><span class="line">un*frigging*believable</span><br></pre></td></tr></table></figure></li><li><p>插入图片两种方式：内联及引用</p></li></ol><ul><li><p>内联方式</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![Alt text](&#x2F;path&#x2F;to&#x2F;img.jpg &quot;Optional title&quot;)</span><br></pre></td></tr></table></figure></li><li><p>引用方式</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![Alt text][id]</span><br><span class="line">[id]: url&#x2F;to&#x2F;image  &quot;Optional title attribute&quot;</span><br></pre></td></tr></table></figure><p>  Markdown 没有语法指定图片尺寸; 如果需要指定图片尺寸, 可以使用 HTML <code>&lt;img&gt;</code>标签.</p></li></ul><p>参考连接： <a href="https://markdown-zh.readthedocs.io/en/latest/" target="_blank" rel="noopener" title="Markdown官网文档地址">官网文档地址</a></p>]]></content>
     
@@ -84,28 +106,6 @@
     
     
       <category term="MarkDown语法" scheme="http://yoursite.com/tags/MarkDown%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/05/17/hello-world/"/>
-    <id>http://yoursite.com/2020/05/17/hello-world/</id>
-    <published>2020-05-17T14:05:23.395Z</published>
-    <updated>2020-05-31T14:30:10.272Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
